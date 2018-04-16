@@ -269,7 +269,7 @@ let menuTempl = function(webviews) {
                 // geth
               } else {
                 if (process.platform === 'darwin') {
-                  userPath += '/Library/Ethereum/keystore';
+                  userPath += '/Library/Feathereum/keystore';
                 }
 
                 if (
@@ -277,11 +277,11 @@ let menuTempl = function(webviews) {
                   process.platform === 'linux' ||
                   process.platform === 'sunos'
                 ) {
-                  userPath += '/.ethereum/keystore';
+                  userPath += '/.feathereum/keystore';
                 }
 
                 if (process.platform === 'win32') {
-                  userPath = `${Settings.appDataPath}\\Ethereum\\keystore`;
+                  userPath = `${Settings.appDataPath}\\Feathereum\\keystore`;
                 }
               }
 
