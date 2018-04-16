@@ -445,7 +445,7 @@ class Windows {
         };
       case 'remix':
         return {
-          url: 'https://remix.ethereum.org',
+          url: 'https://remix.feathereum.org',
           electronOptions: {
             width: 1024,
             height: 720,

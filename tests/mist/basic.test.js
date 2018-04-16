@@ -225,7 +225,7 @@ test[
   const client = this.client;
   yield this.selectTab('browser');
 
-  yield this.navigateTo('https://wallet.ethereum.org');
+  yield this.navigateTo('https://wallet.feathereum.org');
   yield Q.delay(1000);
   const selectedTab = (yield client.execute(() => {
     // code executed in browser context
@@ -243,7 +243,7 @@ test[
   yield this.selectTab('wallet');
 
   yield this.navigateTo(
-    `${this.fixtureBaseUrl}index.html?https://wallet.ethereum.org`
+    `${this.fixtureBaseUrl}index.html?https://wallet.feathereum.org`
   );
   yield client.waitUntil(() => {
     return client.execute(() => {
@@ -262,7 +262,7 @@ test[
   // Now changing address via JS
   yield client.setValue(
     '#url-input',
-    `${this.fixtureBaseUrl}index.html?https://wallet.ethereum.org`
+    `${this.fixtureBaseUrl}index.html?https://wallet.feathereum.org`
   );
   yield client.execute(() => {
     // Code executed in context of browser
