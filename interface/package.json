@@ -8,19 +8,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ethereum/mist.git"
+    "url": "git+https://github.com/feathereum/mist.git"
   },
   "keywords": [
     "ethereum",
+    "feathereum",
     "mist",
     "web3"
   ],
   "author": "Fabian Vogelsteller <fabian@ethereum.org>",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/ethereum/mist/issues"
+    "url": "https://github.com/feathereum/mist/issues"
   },
-  "homepage": "https://github.com/ethereum/mist#readme",
+  "homepage": "https://github.com/feathereum/mist#readme",
   "dependencies": {
     "babel-runtime": "^6.18.0"
   }

@@ -5,7 +5,7 @@
   "author": "Ethereum Mist Team <mist@ethereum.org>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ethereum/mist.git"
+    "url": "https://github.com/feathereum/mist.git"
   },
   "scripts": {
     "postinstall": "electron-builder install-app-deps; cd interface && yarn",
@@ -49,7 +49,7 @@
     "underscore": "^1.8.3",
     "underscore-deep-extend": "^1.1.5",
     "uuid": "^3.0.1",
-    "web3": "^0.18.4",
+    "web3": "feathereum/web3 ^0.18.4",
     "yargs": "^7.0.2"
   },
   "devDependencies": {
