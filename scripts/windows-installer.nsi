@@ -26,9 +26,9 @@ CRCCheck on
 RequestExecutionLevel admin
 
 !searchreplace APPNAMENOHYPEN ${APPNAME} "-" " "
-!define GROUPNAME "Ethereum"
-!define HELPURL "https://github.com/ethereum/mist/releases/issues"
-!define UPDATEURL "https://github.com/ethereum/mist/releases"
+!define GROUPNAME "Feathereum"
+!define HELPURL "https://github.com/feathereum/mist/releases/issues"
+!define UPDATEURL "https://github.com/feathereum/mist/releases"
 !define ABOUTURL "https://feathereum.org"
 !define /date NOW "%Y%m%d"
 
@@ -65,7 +65,7 @@ ${EndIf}
 
     SetShellVarContext current
     StrCpy $DATADIR "$APPDATA\${APPNAME}"
-    StrCpy $NODEDATADIR "$APPDATA\Ethereum"
+    StrCpy $NODEDATADIR "$APPDATA\Feathereum"
     StrCpy $SHORTCUTDIR "$SMPROGRAMS\${APPNAMENOHYPEN}"
     StrCpy $DESKTOPDIR "$DESKTOP"
 
@@ -168,9 +168,9 @@ Section Mist MIST_IDX
     CreateShortCut "$SHORTCUTDIR\Uninstall.lnk" "$FILEDIR\uninstall.exe"
 
     ## Firewall - add rules
-    #SimpleFC::AdvAddRule "Geth incoming peers (TCP:30303)" ""  6 1 1 2147483647 1 "$DATADIR\binaries\Geth\unpacked\geth.exe" "" "" "Ethereum" 30303 "" "" ""
-    #SimpleFC::AdvAddRule "Geth outgoing peers (TCP:30303)" ""  6 2 1 2147483647 1 "$DATADIR\binaries\Geth\unpacked\geth.exe" "" "" "Ethereum" "" 30303 "" ""
-    #SimpleFC::AdvAddRule "Geth UDP discovery (UDP:30303)" "" 17 2 1 2147483647 1 "$DATADIR\binaries\Geth\unpacked\geth.exe" "" "" "Ethereum" "" 30303 "" ""
+    #SimpleFC::AdvAddRule "Gfeath incoming peers (TCP:30303)" ""  6 1 1 2147483647 1 "$DATADIR\binaries\Gfeath\unpacked\gfeath.exe" "" "" "Feathereum" 30303 "" "" ""
+    #SimpleFC::AdvAddRule "Gfeath outgoing peers (TCP:30303)" ""  6 2 1 2147483647 1 "$DATADIR\binaries\Gfeath\unpacked\gfeath.exe" "" "" "Feathereum" "" 30303 "" ""
+    #SimpleFC::AdvAddRule "Gfeath UDP discovery (UDP:30303)" "" 17 2 1 2147483647 1 "$DATADIR\binaries\Gfeath\unpacked\gfeath.exe" "" "" "Feathereum" "" 30303 "" ""
 
     # write registry strings for uninstallation
     WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${GROUPNAME} ${APPNAME}" "DisplayName" "${GROUPNAME} ${APPNAME}"
@@ -237,9 +237,9 @@ Section "uninstall"
     rmDir /r /REBOOTOK "$FILEDIR"
 
     ## Firewall - remove rules (if exists)
-    #SimpleFC::AdvRemoveRule "Geth incoming peers (TCP:30303)"
-    #SimpleFC::AdvRemoveRule "Geth outgoing peers (TCP:30303)"
-    #SimpleFC::AdvRemoveRule "Geth UDP discovery (UDP:30303)"
+    #SimpleFC::AdvRemoveRule "Gfeath incoming peers (TCP:30303)"
+    #SimpleFC::AdvRemoveRule "Gfeath outgoing peers (TCP:30303)"
+    #SimpleFC::AdvRemoveRule "Gfeath UDP discovery (UDP:30303)"
 
     # delete registry strings
     DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${GROUPNAME} ${APPNAME}"
