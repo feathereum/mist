@@ -30,10 +30,10 @@ const startGeth = function*() {
   const manager = new ClientBinaryManager(config);
   yield manager.init();
 
-  if (!manager.clients.Geth.state.available) {
-    gethPath = manager.clients.Geth.activeCli.fullPath;
+  if (!manager.clients.Gfeath.state.available) {
+    gethPath = manager.clients.Gfeath.activeCli.fullPath;
     console.info('Downloading geth...');
-    const downloadedGeth = yield manager.download('Geth');
+    const downloadedGeth = yield manager.download('Gfeath');
     gethPath = downloadedGeth.client.activeCli.fullPath;
     console.info('Geth downloaded at:', gethPath);
   }
@@ -108,7 +108,7 @@ exports.mocha = (_module, options) => {
       console.info(`${appFileName} :: ${platformArch}`);
 
       let appPath;
-      const ipcProviderPath = path.join(this.geth.dataDir, 'geth.ipc');
+      const ipcProviderPath = path.join(this.geth.dataDir, 'gfeath.ipc');
 
       switch (platformArch) {
         case 'darwin-x64':

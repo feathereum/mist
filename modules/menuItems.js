@@ -490,30 +490,30 @@ let menuTempl = function(webviews) {
   if (process.platform === 'darwin' || process.platform === 'win32') {
     const nodeSubmenu = [];
 
-    const ethClient = ClientBinaryManager.getClient('eth');
-    const gethClient = ClientBinaryManager.getClient('geth');
+    const ethClient = ClientBinaryManager.getClient('feath');
+    const gethClient = ClientBinaryManager.getClient('gfeath');
 
     if (gethClient) {
       nodeSubmenu.push({
-        label: `Geth ${gethClient.version}`,
+        label: `Gfeath ${gethClient.version}`,
         checked: ethereumNode.isOwnNode && ethereumNode.isGeth,
         enabled: ethereumNode.isOwnNode,
         type: 'checkbox',
         click() {
-          restartNode('geth', null, 'fast', webviews);
+          restartNode('gfeath', null, 'fast', webviews);
         }
       });
     }
 
     if (ethClient) {
       nodeSubmenu.push({
-        label: `Eth ${ethClient.version} (C++)`,
+        label: `Feath ${ethClient.version} (C++)`,
         checked: ethereumNode.isOwnNode && ethereumNode.isEth,
         enabled: ethereumNode.isOwnNode,
         // enabled: false,
         type: 'checkbox',
         click() {
-          restartNode('eth');
+          restartNode('feath');
         }
       });
     }
@@ -583,7 +583,7 @@ let menuTempl = function(webviews) {
       checked: ethereumNode.isLightMode,
       type: 'checkbox',
       click() {
-        restartNode('geth', null, ethereumNode.isLightMode ? 'fast' : 'light');
+        restartNode('gfeath', null, ethereumNode.isLightMode ? 'fast' : 'light');
       }
     });
   }
@@ -690,19 +690,19 @@ let menuTempl = function(webviews) {
     {
       label: i18n.t('mist.applicationMenu.help.mistWiki'),
       click() {
-        shell.openExternal('https://github.com/ethereum/mist/wiki');
+        shell.openExternal('https://github.com/feathereum/mist/wiki');
       }
     },
     {
       label: i18n.t('mist.applicationMenu.help.gitter'),
       click() {
-        shell.openExternal('https://gitter.im/ethereum/mist');
+        shell.openExternal('https://gitter.im/feathereum/mist');
       }
     },
     {
       label: i18n.t('mist.applicationMenu.help.reportBug'),
       click() {
-        shell.openExternal('https://github.com/ethereum/mist/issues');
+        shell.openExternal('https://github.com/feathereum/mist/issues');
       }
     }
   );

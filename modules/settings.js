@@ -161,15 +161,15 @@ class Settings {
     ipcPath = this.userHomePath;
 
     if (process.platform === 'darwin') {
-      ipcPath += '/Library/Feathereum/geth.ipc';
+      ipcPath += '/Library/Feathereum/gfeath.ipc';
     } else if (
       process.platform === 'freebsd' ||
       process.platform === 'linux' ||
       process.platform === 'sunos'
     ) {
-      ipcPath += '/.feathereum/geth.ipc';
+      ipcPath += '/.feathereum/gfeath.ipc';
     } else if (process.platform === 'win32') {
-      ipcPath = '\\\\.\\pipe\\geth.ipc';
+      ipcPath = '\\\\.\\pipe\\gfeath.ipc';
     }
 
     settingsLog.debug(`IPC path: ${ipcPath}`);
