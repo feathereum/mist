@@ -1,45 +1,45 @@
 {
     "clients": {
-        "Geth": {
-            "version": "1.8.2",
+        "Gfeath": {
+            "version": "1.8.3",
             "platforms": {
                 "linux": {
                     "x64": {
                         "download": {
-                            "url": "https://gethstore.blob.core.windows.net/builds/geth-linux-amd64-1.8.2-b8b9f7f4.tar.gz",
-                            "type": "tar",
+                            "url": "https://github.com/feathereum/go-feathereum/releases/download/fv0.8.3/gfeath-1.8.3-linux-amd64.zip",
+                            "type": "zip",
                             "md5": "46a76e77fc9ae4dc9f8d1cf50f3b5798",
-                            "bin": "geth-linux-amd64-1.8.2-b8b9f7f4/geth"
+                            "bin": "gfeath-1.8.3-linux-amd64/gfeath"
                         },
-                        "bin": "geth",
+                        "bin": "gfeath",
                         "commands": {
                             "sanity": {
                                 "args": [
                                     "version"
                                 ],
                                 "output": [
-                                    "Geth",
-                                    "1.8.2"
+                                    "Gfeath",
+                                    "1.8.3"
                                 ]
                             }
                         }
                     },
                     "ia32": {
                         "download": {
-                            "url": "https://gethstore.blob.core.windows.net/builds/geth-linux-386-1.8.2-b8b9f7f4.tar.gz",
-                            "type": "tar",
+                            "url": "https://github.com/feathereum/go-feathereum/releases/download/fv0.8.3/gfeath-1.8.3-linux-386.zip",
+                            "type": "zip",
                             "md5": "ac296bdc4eb4d2ba0d3e2c304ae457b5",
-                            "bin": "geth-linux-386-1.8.2-b8b9f7f4/geth"
+                            "bin": "gfeath-1.8.3-linux-386/gfeath"
                         },
-                        "bin": "geth",
+                        "bin": "gfeath",
                         "commands": {
                             "sanity": {
                                 "args": [
                                     "version"
                                 ],
                                 "output": [
-                                    "Geth",
-                                    "1.8.2"
+                                    "Gfeath",
+                                    "1.8.3"
                                 ]
                             }
                         }
@@ -48,20 +48,20 @@
                 "mac": {
                     "x64": {
                         "download": {
-                            "url": "https://gethstore.blob.core.windows.net/builds/geth-darwin-amd64-1.8.2-b8b9f7f4.tar.gz",
-                            "type": "tar",
+                            "url": "https://github.com/feathereum/go-feathereum/releases/download/fv0.8.3/gfeath-1.8.3-darwin-amd64.zip",
+                            "type": "zip",
                             "md5": "33e03f5df5798c3efb8aabd7c11fdd34",
-                            "bin": "geth-darwin-amd64-1.8.2-b8b9f7f4/geth"
+                            "bin": "gfeath-1.8.3-darwin-amd64/gfeath"
                         },
-                        "bin": "geth",
+                        "bin": "gfeath",
                         "commands": {
                             "sanity": {
                                 "args": [
                                     "version"
                                 ],
                                 "output": [
-                                    "Geth",
-                                    "1.8.2"
+                                    "Gfeath",
+                                    "1.8.3"
                                 ]
                             }
                         }
@@ -70,40 +70,40 @@
                 "win": {
                     "x64": {
                         "download": {
-                            "url": "https://gethstore.blob.core.windows.net/builds/geth-windows-amd64-1.8.2-b8b9f7f4.zip",
+                            "url": "https://github.com/feathereum/go-feathereum/releases/download/fv0.8.3/gfeath-1.8.3-windows-amd64.zip",
                             "type": "zip",
                             "md5": "f498df54aaa42f4269c2d2d06df482fd",
-                            "bin": "geth-windows-amd64-1.8.2-b8b9f7f4\\geth.exe"
+                            "bin": "gfeath-1.8.3-windows-amd64\\gfeath.exe"
                         },
-                        "bin": "geth.exe",
+                        "bin": "gfeath.exe",
                         "commands": {
                             "sanity": {
                                 "args": [
                                     "version"
                                 ],
                                 "output": [
-                                    "Geth",
-                                    "1.8.2"
+                                    "Gfeath",
+                                    "1.8.3"
                                 ]
                             }
                         }
                     },
                     "ia32": {
                         "download": {
-                            "url": "https://gethstore.blob.core.windows.net/builds/geth-windows-386-1.8.2-b8b9f7f4.zip",
+                            "url": "https://github.com/feathereum/go-feathereum/releases/download/v0.8.3/gfeath-1.8.3-windows-386.zip",
                             "type": "zip",
                             "md5": "4760b54e20de3ee50237ea8df896fb6f",
-                            "bin": "geth-windows-386-1.8.2-b8b9f7f4\\geth.exe"
+                            "bin": "gfeath-1.8.3-windows-386\\gfeath.exe"
                         },
-                        "bin": "geth.exe",
+                        "bin": "gfeath.exe",
                         "commands": {
                             "sanity": {
                                 "args": [
                                     "version"
                                 ],
                                 "output": [
-                                    "Geth",
-                                    "1.8.2"
+                                    "Gfeath",
+                                    "1.8.3"
                                 ]
                             }
                         }
