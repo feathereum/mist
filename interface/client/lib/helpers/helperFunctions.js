@@ -235,29 +235,29 @@ Helpers.detectNetwork = function(hash) {
   var network = {};
 
   switch (hash) {
-    case '0xd4e56740f876aef8c010b86a40d5f56745a118d0906a34e69aec8c0db1cb8fa3':
+    case '0x89b8a362a957b04f0c705b695bea110eec4b1c4ab5cd3a8884fb0536ad80b753':
       console.log('Network is mainnet');
       network.type = 'mainnet';
       network.name = 'Main';
       break;
 
-    case '0x41941023680923e0fe4d74a34bdac8141f2540e3ae90623718e47d66d1ca4a2d':
+    case '0xd09db2a8064b6915aa80aea67d1a052855ca294b401e6b37fa246861fcffe7a0':
       console.log('Network is Testnet #3 (Ropsten)');
       network.type = 'testnet';
       network.name = 'Ropsten';
       break;
 
-    case '0x6341fd3daf94b748c72ced5a5b26028f2474f5f00d824504e4fa37a75767e177':
-      console.log('Network is Testnet #4 (Rinkeby)');
-      network.type = 'testnet';
-      network.name = 'Rinkeby';
-      break;
-
-    case '0x0cd786a2425d16f152c658316c423e6ce1181e15c3295826d7c9904cba9ce303':
-      console.log('Network is Testnet #2 (Morden)');
-      network.type = 'testnet';
-      network.name = 'Morden';
-      break;
+    // case '0x6341fd3daf94b748c72ced5a5b26028f2474f5f00d824504e4fa37a75767e177':
+    //   console.log('Network is Testnet #4 (Rinkeby)');
+    //   network.type = 'testnet';
+    //   network.name = 'Rinkeby';
+    //   break;
+    //
+    // case '0x0cd786a2425d16f152c658316c423e6ce1181e15c3295826d7c9904cba9ce303':
+    //   console.log('Network is Testnet #2 (Morden)');
+    //   network.type = 'testnet';
+    //   network.name = 'Morden';
+    //   break;
 
     default:
       console.log('Network is privatenet');
