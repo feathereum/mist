@@ -6,9 +6,9 @@
                 "linux": {
                     "x64": {
                         "download": {
-                            "url": "https://github.com/feathereum/go-feathereum/releases/download/fv0.8.3/gfeath-1.8.3-linux-amd64.zip",
+                            "url": "https://github.com/feathereum/go-feathereum/releases/download/fv1.8.3/gfeath-1.8.3-linux-amd64.zip",
                             "type": "zip",
-                            "md5": "46a76e77fc9ae4dc9f8d1cf50f3b5798",
+                            "md5": "319074189194cdce770868accf2ff1fb",
                             "bin": "gfeath-1.8.3-linux-amd64/gfeath"
                         },
                         "bin": "gfeath",
@@ -26,9 +26,9 @@
                     },
                     "ia32": {
                         "download": {
-                            "url": "https://github.com/feathereum/go-feathereum/releases/download/fv0.8.3/gfeath-1.8.3-linux-386.zip",
+                            "url": "https://github.com/feathereum/go-feathereum/releases/download/fv1.8.3/gfeath-1.8.3-linux-386.zip",
                             "type": "zip",
-                            "md5": "ac296bdc4eb4d2ba0d3e2c304ae457b5",
+                            "md5": "76baf4a8c69dc46de03044c9b9832d87",
                             "bin": "gfeath-1.8.3-linux-386/gfeath"
                         },
                         "bin": "gfeath",
@@ -48,7 +48,7 @@
                 "mac": {
                     "x64": {
                         "download": {
-                            "url": "https://github.com/feathereum/go-feathereum/releases/download/fv0.8.3/gfeath-1.8.3-darwin-amd64.zip",
+                            "url": "https://github.com/feathereum/go-feathereum/releases/download/fv1.8.3/gfeath-1.8.3-darwin-amd64.zip",
                             "type": "zip",
                             "md5": "33e03f5df5798c3efb8aabd7c11fdd34",
                             "bin": "gfeath-1.8.3-darwin-amd64/gfeath"
@@ -70,9 +70,9 @@
                 "win": {
                     "x64": {
                         "download": {
-                            "url": "https://github.com/feathereum/go-feathereum/releases/download/fv0.8.3/gfeath-1.8.3-windows-amd64.zip",
+                            "url": "https://github.com/feathereum/go-feathereum/releases/download/fv1.8.3/gfeath-1.8.3-windows-amd64.zip",
                             "type": "zip",
-                            "md5": "f498df54aaa42f4269c2d2d06df482fd",
+                            "md5": "27c7c1775d5678d161c7dbd5b828b61f",
                             "bin": "gfeath-1.8.3-windows-amd64\\gfeath.exe"
                         },
                         "bin": "gfeath.exe",
@@ -90,9 +90,9 @@
                     },
                     "ia32": {
                         "download": {
-                            "url": "https://github.com/feathereum/go-feathereum/releases/download/v0.8.3/gfeath-1.8.3-windows-386.zip",
+                            "url": "https://github.com/feathereum/go-feathereum/releases/download/v1.8.3/gfeath-1.8.3-windows-386.zip",
                             "type": "zip",
-                            "md5": "4760b54e20de3ee50237ea8df896fb6f",
+                            "md5": "a6d0cffe001854705ee484a9a0698706",
                             "bin": "gfeath-1.8.3-windows-386\\gfeath.exe"
                         },
                         "bin": "gfeath.exe",
