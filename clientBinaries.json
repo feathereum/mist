@@ -70,10 +70,10 @@
                 "win": {
                     "x64": {
                         "download": {
-                            "url": "https://github.com/feathereum/go-feathereum/releases/download/fv1.8.3/gfeath-1.8.3-windows-amd64.zip",
+                            "url": "https://github.com/feathereum/go-feathereum/releases/download/fv1.8.3/gfeath-1.8.3-windows-4.0-amd64.zip",
                             "type": "zip",
                             "md5": "27c7c1775d5678d161c7dbd5b828b61f",
-                            "bin": "gfeath-1.8.3-windows-amd64\\gfeath.exe"
+                            "bin": "gfeath-1.8.3-windows-4.0-amd64\\gfeath.exe"
                         },
                         "bin": "gfeath.exe",
                         "commands": {
@@ -90,10 +90,10 @@
                     },
                     "ia32": {
                         "download": {
-                            "url": "https://github.com/feathereum/go-feathereum/releases/download/v1.8.3/gfeath-1.8.3-windows-386.zip",
+                            "url": "https://github.com/feathereum/go-feathereum/releases/download/v1.8.3/gfeath-1.8.3-windows-4.0-386.zip",
                             "type": "zip",
                             "md5": "a6d0cffe001854705ee484a9a0698706",
-                            "bin": "gfeath-1.8.3-windows-386\\gfeath.exe"
+                            "bin": "gfeath-1.8.3-windows-4.0-386\\gfeath.exe"
                         },
                         "bin": "gfeath.exe",
                         "commands": {
